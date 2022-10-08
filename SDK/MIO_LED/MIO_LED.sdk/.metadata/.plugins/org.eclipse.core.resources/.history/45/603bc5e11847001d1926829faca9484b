@@ -1,0 +1,15 @@
+/*
+ * main.c
+ *
+ *  Created on: 2022Äê10ÔÂ8ÈÕ
+ *      Author: NJY_r
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	printf("GPIO MIO TEST!\n\r");
+
+	return 0;
+}

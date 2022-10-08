@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: 2022年10月8日
+ *      Author: NJY_r
+ */
+
+#include "stdio.h"
+
+int main()
+{
+	printf("GPIO MIO TEST!\n\r");
+
+	//初始化GPIO驱动
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+						ConfigPtr->BaseAddr);
+
+	//设置GPIO方向为输出
+
+	//设置输出使能
+
+	//写数据到GPIO引脚
+
+
+
+	return 0;
+}
