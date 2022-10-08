@@ -6252,3 +6252,12 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-10-08 23:52:56.144
 !MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Zynq/SDK/MIO_LED/MIO_LED.sdk/MIO_LED_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-10-08 23:54:30.058
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-10-08 23:54:30.087
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-819
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-10-08 23:54:30.090
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-819
