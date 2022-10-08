@@ -52,14 +52,10 @@ int main()
 	{
 		//µÁ¡¡
 		XGpioPs_WritePin(&Gpio, MIO0_LED, 1);
-		XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
-		XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
 		//—” ±
 		usleep(200000);
 		//œ®√
 		XGpioPs_WritePin(&Gpio, MIO0_LED, 0);
-		XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
-		XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
 		//—” ±
 		usleep(200000);
 	}
