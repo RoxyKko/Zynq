@@ -1,8 +1,8 @@
-23:51:58 **** Incremental Build of configuration Debug for project MIO_LED ****
+12:14:41 **** Incremental Build of configuration Debug for project MIO_LED ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-23:51:58 Build Finished (took 259ms)
+12:14:42 Build Finished (took 299ms)
 

@@ -16,10 +16,66 @@
 #define MIO0_LED 0
 #define MIO7_LED 7
 #define MIO8_LED 8
+#define MIO11_KEY 11
+#define MIO12_KEY 12
 
 XGpioPs_Config *ConfigPtr;
 
 XGpioPs Gpio;
+
+uint8_t LEDmode = 0;
+
+//跑马灯
+void runLED()
+{
+	XGpioPs_WritePin(&Gpio, MIO0_LED, 1);
+	XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
+	XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
+
+	//延时
+	usleep(200000);
+
+	XGpioPs_WritePin(&Gpio, MIO0_LED, 0);
+	XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
+	XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
+
+	//延时
+	usleep(200000);
+
+	XGpioPs_WritePin(&Gpio, MIO0_LED, 0);
+	XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
+	XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
+
+	//延时
+	usleep(200000);
+}
+
+//呼吸灯
+void BreatLED()
+{
+	int a;
+	int b = 401;
+	for(a=1; a<b; a++)
+	{
+		XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
+		XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
+		usleep(a);
+		XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
+		XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
+		usleep(b-a);
+	}
+	for(a=b; a>0; a--)
+	{
+		XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
+		XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
+		usleep(a);
+		XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
+		XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
+		usleep(b-a+1);
+	}
+}
+
+
 
 int main()
 {
@@ -38,6 +94,8 @@ int main()
 	XGpioPs_SetDirectionPin(&Gpio, MIO0_LED, 1);
 	XGpioPs_SetDirectionPin(&Gpio, MIO7_LED, 1);
 	XGpioPs_SetDirectionPin(&Gpio, MIO8_LED, 1);
+	XGpioPs_SetDirectionPin(&Gpio, MIO11_KEY, 0);
+	XGpioPs_SetDirectionPin(&Gpio, MIO12_KEY, 0);
 	/*设置输出使能  0：关闭 1：打开*/
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO0_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO7_LED, 1);
@@ -50,18 +108,32 @@ int main()
 
 	while(1)
 	{
-		//电亮
-		XGpioPs_WritePin(&Gpio, MIO0_LED, 1);
-		XGpioPs_WritePin(&Gpio, MIO7_LED, 0);
-		XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
-		//延时
-		usleep(200000);
-		//熄灭
-		XGpioPs_WritePin(&Gpio, MIO0_LED, 0);
-		XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
-		XGpioPs_WritePin(&Gpio, MIO8_LED, 0);
-		//延时
-		usleep(200000);
+		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
+		{
+			LEDmode++;
+			LEDmode%=2;
+		}
+		if (XGpioPs_ReadPin(&Gpio, MIO12_KEY) == 0)
+		{
+			LEDmode++;
+			LEDmode%=2;
+		}
+
+
+
+		if (LEDmode == 0)
+		{
+			printf("now is runLED\r\n");
+			//跑马灯
+			runLED();
+		}
+		else
+		{
+			printf("now is BreatLED\r\n");
+			//呼吸灯
+			BreatLED();
+		}
+
 	}
 
 	return 0;

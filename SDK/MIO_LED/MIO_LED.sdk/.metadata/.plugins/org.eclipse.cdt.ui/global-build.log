@@ -118,3 +118,263 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+11:41:26 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77732	   2588	  23376	 103696	  19510	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+11:46:34 **** Incremental Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:48:04 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77860	   2588	  23376	 103824	  19590	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+11:50:55 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77860	   2588	  23376	 103824	  19590	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+11:56:11 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78180	   2588	  23376	 104144	  196d0	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+11:58:34 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78308	   2588	  23376	 104272	  19750	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:00:03 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78348	   2588	  23376	 104312	  19778	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:00:40 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78476	   2588	  23376	 104440	  197f8	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:11:39 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78412	   2588	  23376	 104376	  197b8	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:12:00 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78412	   2588	  23376	 104376	  197b8	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:12:11 **** Incremental Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:13:00 **** Incremental Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78584	   2588	  23376	 104548	  19864	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:13:41 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78520	   2588	  23376	 104484	  19824	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:13:44 **** Incremental Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:14:30 **** Auto Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MIO_LED_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: MIO_LED.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MIO_LED_bsp/ps7_cortexa9_0/lib -o "MIO_LED.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MIO_LED.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MIO_LED.elf  |tee "MIO_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78648	   2588	  23376	 104612	  198a4	MIO_LED.elf
+'Finished building: MIO_LED.elf.size'
+' '
+12:14:41 **** Incremental Build of configuration Debug for project MIO_LED ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

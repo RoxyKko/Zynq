@@ -4,3 +4,17 @@
 21:55:06 INFO  : Successfully done setting XSCT server connection channel  
 21:55:07 INFO  : Successfully done setting SDK workspace  
 21:55:07 INFO  : Processing command line option -hwspec E:/Zynq/SDK/EMIO/EMIO.sdk/system_wrapper.hdf.
+22:06:15 INFO  : Registering command handlers for SDK TCF services
+22:06:16 INFO  : Launching XSCT server: xsct.bat -interactive E:\Zynq\SDK\EMIO\EMIO.sdk\temp_xsdb_launch_script.tcl
+22:06:18 INFO  : XSCT server has started successfully.
+22:06:18 INFO  : Successfully done setting XSCT server connection channel  
+22:06:18 INFO  : Successfully done setting SDK workspace  
+22:06:18 INFO  : Processing command line option -hwspec E:/Zynq/SDK/EMIO/EMIO.sdk/system_wrapper.hdf.
+22:06:18 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:06:20 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1665583489498,  Project:1665582757079
+22:06:20 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from E:/Zynq/SDK/EMIO/EMIO.sdk/system_wrapper.hdf.
+22:06:20 INFO  : Copied contents of E:/Zynq/SDK/EMIO/EMIO.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+22:06:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:06:23 INFO  : 
+22:06:24 INFO  : Updating hardware inferred compiler options for EMIO.
+22:06:24 INFO  : Clearing existing target manager status.
