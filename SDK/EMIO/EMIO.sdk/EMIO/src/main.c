@@ -1,7 +1,7 @@
 /*
  * main.c
  *
- *  Created on: 2022年10月12日
+ *  Created on: 2022年10月8日
  *      Author: NJY_r
  */
 
@@ -19,8 +19,8 @@
 #define MIO11_KEY 11
 #define MIO12_KEY 12
 
-#define EMIO_PWM 54
-#define EMIO_KEY 55
+#define EMIO_KEY 54
+#define EMIO_OUT 55
 
 XGpioPs_Config *ConfigPtr;
 
@@ -78,16 +78,12 @@ void BreatLED()
 	}
 }
 
-void PWM()
-{
-
-}
 
 
 int main()
 {
 
-	printf("GPIO EMIO TEST!\n\r");
+	printf("GPIO MIO TEST!\n\r");
 
 	/*初始化GPIO驱动*/
 
@@ -101,17 +97,14 @@ int main()
 	XGpioPs_SetDirectionPin(&Gpio, MIO0_LED, 1);
 	XGpioPs_SetDirectionPin(&Gpio, MIO7_LED, 1);
 	XGpioPs_SetDirectionPin(&Gpio, MIO8_LED, 1);
+	XGpioPs_SetDirectionPin(&Gpio, EMIO_OUT, 1);
 	XGpioPs_SetDirectionPin(&Gpio, MIO11_KEY, 0);
 	XGpioPs_SetDirectionPin(&Gpio, MIO12_KEY, 0);
-
-	XGpioPs_SetDirectionPin(&Gpio, EMIO_PWM, 1);
 	XGpioPs_SetDirectionPin(&Gpio, EMIO_KEY, 0);
 	/*设置输出使能  0：关闭 1：打开*/
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO0_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO7_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO8_LED, 1);
-
-	XGpioPs_SetOutputEnablePin(&Gpio, EMIO_PWM, 1);
 
 
 	/*写数据到GPIO引脚 0：低电平 1：高电平 */
@@ -119,18 +112,14 @@ int main()
 	XGpioPs_WritePin(&Gpio, MIO7_LED, 1);
 	XGpioPs_WritePin(&Gpio, MIO8_LED, 1);
 
-	XGpioPs_WritePin(&Gpio, EMIO_PWM, 1);
-
 
 	while(1)
 	{
-		//按键1控制LED模式
-		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
+		if (XGpioPs_ReadPin(&Gpio, EMIO_KEY) == 0)
 		{
 			LEDmode++;
 			LEDmode%=2;
 		}
-		//按键2控制PWM状态
 		if (XGpioPs_ReadPin(&Gpio, MIO12_KEY) == 0)
 		{
 			LEDmode++;
@@ -156,5 +145,3 @@ int main()
 
 	return 0;
 }
-
-
