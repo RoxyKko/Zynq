@@ -200,7 +200,7 @@ int main()
 		if (XGpioPs_ReadPin(&Gpio, EMIO_KEY) == 0)
 		{
 			mode++;
-			mode%=10;
+			mode%=6;
 		}
 		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
 		{
