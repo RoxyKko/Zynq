@@ -200,19 +200,13 @@ int main()
 		if (XGpioPs_ReadPin(&Gpio, EMIO_KEY) == 0)
 		{
 			mode++;
-			mode%=6;
-		}
-		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
-		{
-			Dutymode++;
 			mode%=3;
 		}
 		if (XGpioPs_ReadPin(&Gpio, MIO12_KEY) == 0)
 		{
-			Fremode++;
-			mode%=3;
+			Dutymode++;
+			mode%=9;
 		}
-
 
 
 
@@ -227,12 +221,6 @@ int main()
 			printf("now is BreatLED\r\n");
 			//ºôÎüµÆ
 			BreatLED();
-		}
-		else
-		{
-			printf("now is PWM\r\n");
-			//PWM
-			PWM();
 		}
 
 	}

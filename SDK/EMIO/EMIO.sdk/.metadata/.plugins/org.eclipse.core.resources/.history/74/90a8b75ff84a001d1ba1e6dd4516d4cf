@@ -28,7 +28,6 @@ XGpioPs Gpio;
 
 uint8_t mode = 0;
 uint8_t Dutymode = 0;
-uint8_t Fremode = 0;
 
 //ÅÜÂíµÆ
 void runLED()
@@ -83,80 +82,44 @@ void BreatLED()
 //PWMÊä³ö
 void PWM()
 {
-	if (Fremode == 0)	//50hz
+	if (Dutymode == 0)
 	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(5000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(15000);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(10000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(10000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(18000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(2000);
-		}
-
 
 	}
-	else if (Fremode == 1)	//100hz
+	else if (Dutymode == 1)
 	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(2500);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(7500);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(5000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(5000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(9000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(1000);
-		}
+
 	}
-	else if (Fremode == 2)	//250hz
+	else if (Dutymode == 2)
 	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(1000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(3000);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(2000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(2000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(3600);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(400);
-		}
+
 	}
+	else if (Dutymode == 3)
+	{
+
+	}
+	else if (Dutymode == 4)
+	{
+
+	}
+	else if (Dutymode == 5)
+	{
+
+	}
+	else if (Dutymode == 6)
+	{
+
+	}
+	else if (Dutymode == 7)
+	{
+
+	}
+	else if (Dutymode == 8)
+	{
+
+	}
+
+
 }
 
 
@@ -200,19 +163,13 @@ int main()
 		if (XGpioPs_ReadPin(&Gpio, EMIO_KEY) == 0)
 		{
 			mode++;
-			mode%=6;
-		}
-		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
-		{
-			Dutymode++;
 			mode%=3;
 		}
 		if (XGpioPs_ReadPin(&Gpio, MIO12_KEY) == 0)
 		{
-			Fremode++;
-			mode%=3;
+			Dutumode++;
+			mode%=9;
 		}
-
 
 
 
@@ -227,12 +184,6 @@ int main()
 			printf("now is BreatLED\r\n");
 			//ºôÎüµÆ
 			BreatLED();
-		}
-		else
-		{
-			printf("now is PWM\r\n");
-			//PWM
-			PWM();
 		}
 
 	}

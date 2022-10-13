@@ -8,3 +8,381 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+20:55:05 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78712	   2588	  23376	 104676	  198e4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+20:55:12 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78712	   2588	  23376	 104676	  198e4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+20:56:14 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78776	   2588	  23376	 104740	  19924	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+20:56:46 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78776	   2588	  23376	 104740	  19924	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+20:57:08 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78776	   2588	  23376	 104740	  19924	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:05:53 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'PWM':
+../src/main.c:85:6: error: 'Duty' undeclared (first use in this function); did you mean 'putw'?
+  if (Duty == 0)
+      ^~~~
+      putw
+../src/main.c:85:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:89:11: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+  else if (Dutumode == 1)
+           ^~~~~~~~
+           Dutymode
+../src/main.c: In function 'main':
+../src/main.c:170:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:06:05 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'PWM':
+../src/main.c:89:11: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+  else if (Dutumode == 1)
+           ^~~~~~~~
+           Dutymode
+../src/main.c:89:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:170:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:06:24 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:170:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+../src/main.c:170:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:10:13 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:180:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+../src/main.c:180:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:11:02 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:180:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+../src/main.c:180:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:16:24 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:180:4: error: 'Dutumode' undeclared (first use in this function); did you mean 'Dutymode'?
+    Dutumode++;
+    ^~~~~~~~
+    Dutymode
+../src/main.c:180:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+21:16:32 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78968	   2588	  23376	 104932	  199e4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:20:01 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79032	   2588	  23376	 104996	  19a24	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:20:24 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79160	   2588	  23376	 105124	  19aa4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:22:26 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79544	   2588	  23376	 105508	  19c24	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:23:20 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79672	   2588	  23376	 105636	  19ca4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:24:16 **** Incremental Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:37:34 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2588	  23376	 105716	  19cf4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:37:38 **** Incremental Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:47:57 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2588	  23376	 105716	  19cf4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:48:01 **** Incremental Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:48:47 **** Auto Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EMIO_bsp/ps7_cortexa9_0/lib -o "EMIO.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size EMIO.elf  |tee "EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2588	  23376	 105716	  19cf4	EMIO.elf
+'Finished building: EMIO.elf.size'
+' '
+21:48:52 **** Incremental Build of configuration Debug for project EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

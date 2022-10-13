@@ -26,9 +26,7 @@ XGpioPs_Config *ConfigPtr;
 
 XGpioPs Gpio;
 
-uint8_t mode = 0;
-uint8_t Dutymode = 0;
-uint8_t Fremode = 0;
+uint8_t LEDmode = 0;
 
 //跑马灯
 void runLED()
@@ -80,84 +78,6 @@ void BreatLED()
 	}
 }
 
-//PWM输出
-void PWM()
-{
-	if (Fremode == 0)	//50hz
-	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(5000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(15000);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(10000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(10000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(18000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(2000);
-		}
-
-
-	}
-	else if (Fremode == 1)	//100hz
-	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(2500);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(7500);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(5000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(5000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(9000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(1000);
-		}
-	}
-	else if (Fremode == 2)	//250hz
-	{
-		if (Dutymode == 0)	//25%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(1000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(3000);
-		}
-		else if(Dutymode == 1)	//50%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(2000);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(2000);
-		}
-		else if(Dutymode == 2)	//90%
-		{
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 1);
-			usleep(3600);
-			XGpioPs_WritePin(&Gpio, EMIO_OUT, 0);
-			usleep(400);
-		}
-	}
-}
 
 
 int main()
@@ -181,12 +101,12 @@ int main()
 	XGpioPs_SetDirectionPin(&Gpio, MIO11_KEY, 0);
 	XGpioPs_SetDirectionPin(&Gpio, MIO12_KEY, 0);
 	XGpioPs_SetDirectionPin(&Gpio, EMIO_KEY, 0);
-
 	/*设置输出使能  0：关闭 1：打开*/
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO0_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO7_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO8_LED, 1);
 	XGpioPs_SetOutputEnablePin(&Gpio, EMIO_OUT, 1);
+
 
 	/*写数据到GPIO引脚 0：低电平 1：高电平 */
 	XGpioPs_WritePin(&Gpio, MIO0_LED, 1);
@@ -199,40 +119,28 @@ int main()
 	{
 		if (XGpioPs_ReadPin(&Gpio, EMIO_KEY) == 0)
 		{
-			mode++;
-			mode%=6;
-		}
-		if (XGpioPs_ReadPin(&Gpio, MIO11_KEY) == 0)
-		{
-			Dutymode++;
-			mode%=3;
+			LEDmode++;
+			LEDmode%=2;
 		}
 		if (XGpioPs_ReadPin(&Gpio, MIO12_KEY) == 0)
 		{
-			Fremode++;
-			mode%=3;
+			LEDmode++;
+			LEDmode%=2;
 		}
 
 
 
-
-		if (mode == 0)
+		if (LEDmode == 0)
 		{
 			printf("now is runLED\r\n");
 			//跑马灯
 			runLED();
 		}
-		else if (mode == 1)
+		else
 		{
 			printf("now is BreatLED\r\n");
 			//呼吸灯
 			BreatLED();
-		}
-		else
-		{
-			printf("now is PWM\r\n");
-			//PWM
-			PWM();
 		}
 
 	}
