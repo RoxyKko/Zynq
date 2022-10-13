@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../../EMIO.srcs/sources_1/bd/EMIO/ipshared/ec67/hdl" --include "../../../../EMIO.srcs/sources_1/bd/EMIO/ipshared/70cf/hdl" --include "../../../../EMIO.srcs/sources_1/bd/EMIO/ip/EMIO_processing_system7_0_0" \
+"../../../../EMIO.srcs/sources_1/bd/EMIO/ip/EMIO_processing_system7_0_0/sim/EMIO_processing_system7_0_0.v" \
+"../../../../EMIO.srcs/sources_1/bd/EMIO/sim/EMIO.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
